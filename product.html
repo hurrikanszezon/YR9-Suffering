@@ -34,7 +34,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../../index2.html" class="logo">
+    <a href="login.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -59,25 +59,35 @@
                <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Főmenü</li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-circle-thin"></i> <span>Login</span>
+        <li>
+          <a href="login.html">
+            <i class="fa fa-circle-thin"></i> <span>Bejelentkezés</span>
           </a>
-          <a href="#">
-            <i class="fa fa-address-card-o"></i> <span>Customer</span>
+        </li>
+        <li>
+          <a href="customer.html">
+            <i class="fa fa-address-card-o"></i> <span>Vásárlók</span>
           </a>
-          <a href="#">
-            <i class="fa fa-television"></i> <span>Product</span>
+        </li>
+        <li>
+          <a href="product.html">
+            <i class="fa fa-television"></i> <span>Termékek</span>
           </a>
-          <a href="#">
-            <i class="fa fa-shopping-basket"></i> <span>Order</span>
-          </a>
-          
+        </li>
+        <li>
+          <a href="order.html">
+            <i class="fa fa-shopping-basket"></i> <span>Rendelés</span>
+          </a>  
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->
   </aside>
-    
+
+  <!-- =============================================== -->
+   
+<H2>Nálunk vásárolható termékek:</H2>
+
     <Table id="example2" class="table table-bordered table-hover" >
     <thead>
         <tr>
@@ -357,18 +367,57 @@
             </tr>
             <tr>
             <td>#025</td>
-            <td>Gilette</td>
-            <td>Borotva (4Db)</td>
-            <td>375Ft</td>
-            <td>1 hét</td>
-            <td>97</td>
+            <td>Vécsey</td>
+            <td>Kézigránát (3Db)</td>
+            <td>15000Ft</td>
+            <td>1-2 hét</td>
+            <td>36</td>
             <td>
                 <input type="submit" name="kosarba" value="kosárba">
             </td>
             </tr>
 
         </tbody>
-
     </Table>
+
+    <!-- jQuery 3 -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.sidebar-menu').tree()
+  })
+</script>
 </body>
+<footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>Version</b> 0.0.1
+        </div>
+        <strong>Copyright &copy; 2018<a href="https://sufferingstudio.com">Suffering Studio </a>.</strong> All rights
+        reserved.
+      </footer>
+    
+      
+              <!-- /.form-group -->
+            </form>
+          </div>
+          <!-- /.tab-pane -->
+        </div>
+      </aside>
+      <!-- /.control-sidebar -->
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+      <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+    
 </html>
