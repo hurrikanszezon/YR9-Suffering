@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TEAMSuffering | Customer</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="/bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="/dist/css/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="login.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>T</b>Su</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>TEAM</b>Suffering</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+    <!-- Sidebar toggle button-->
+    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
+    </nav>
+  </header>
+
+  <!-- =============================================== -->
+
+  <!-- Left side column. contains the sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+               <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">Főmenü</li>
+        <li>
+          <a href="login.html">
+            <i class="fa fa-circle-thin"></i> <span>Bejelentkezés</span>
+          </a>
+        </li>
+        <li>
+          <a href="customer.html">
+            <i class="fa fa-address-card-o"></i> <span>Vásárlók</span>
+          </a>
+        </li>
+        <li>
+          <a href="product.html">
+            <i class="fa fa-television"></i> <span>Termékek</span>
+          </a>
+        </li>
+        <li>
+          <a href="order.html">
+            <i class="fa fa-shopping-basket"></i> <span>Rendelés</span>
+          </a>  
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- =============================================== -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+          Nálunk szeretettel vásárolható termékek
+        </h1>
+      </section>
+  
+
+    <!-- Main content -->
+    <section class="content">
+        <!--Customer table-->
+
+    <table id="example2" class="table table-bordered table-hover" >
+    <thead>
+        <tr>
+            <th><b>Cikkszám</b></th>
+            <th><b>Gyártó</b></th>
+            <th><b>Terméknév</b></th>
+            <th><b>Ár</b></th>
+            <th><b>Szállítási idő</b></th>
+            <th><b>Raktári elérhetőség (db)</b></th>
+            <th><b>Kosárba</b></th>
+        </tr>
+    </thead>    
+        <tbody>
+            <tr>
+            <td>#001</td>
+            <td>Farkas Bertalan</td>
+            <td>Vadászkés</td>
+            <td>15000Ft</td>
+            <td>1 hét</td>
+            <td>23</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#002</td>
+            <td>Authentic Kyoto</td>
+            <td>Szamuráj kard</td>
+            <td>40000Ft</td>
+            <td>1-2 hét</td>
+            <td>5</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#003</td>
+            <td>Jurátus</td>
+            <td>Török szablya</td>
+            <td>25000Ft</td>
+            <td>1 hét</td>
+            <td>12</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#004</td>
+            <td>Kossuth</td>
+            <td>Hosszú kard</td>
+            <td>28000Ft</td>
+            <td>1 hét</td>
+            <td>9</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#005</td>
+            <td>Karl Elsner</td>
+            <td>Svájci bicska</td>
+            <td>7500Ft</td>
+            <td>1 hét</td>
+            <td>37</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#006</td>
+            <td>Zippo</td>
+            <td>Öngyújtó</td>
+            <td>6500Ft</td>
+            <td>1 hét</td>
+            <td>34</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#007</td>
+            <td>Colt</td>
+            <td>.45 pisztoly</td>
+            <td>100000Ft</td>
+            <td>2-3 hét</td>
+            <td>7</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#008</td>
+            <td>Magnum</td>
+            <td>.45 revolver</td>
+            <td>150000Ft</td>
+            <td>2-3 hét</td>
+            <td>6</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#009</td>
+            <td>Zippo</td>
+            <td>Lőpor</td>
+            <td>2500Ft (/g)</td>
+            <td>1 hét</td>
+            <td>1000 (g)</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#010</td>
+            <td>Colt</td>
+            <td>Pisztolygolyó</td>
+            <td>2500Ft (db)</td>
+            <td>1 hét</td>
+            <td>250</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#011</td>
+            <td>Winchester</td>
+            <td>Duplacsöves puska</td>
+            <td>240000Ft</td>
+            <td>2-3 hét</td>
+            <td>4</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#012</td>
+            <td>Winchester</td>
+            <td>Vadászpuska</td>
+            <td>265000Ft</td>
+            <td>2-3 hét</td>
+            <td>3</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#013</td>
+            <td>General Electric</td>
+            <td>M134 Minigun</td>
+            <td>1450000Ft</td>
+            <td>3 hónap</td>
+            <td>Csak előrendelésre</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#014</td>
+            <td>M16</td>
+            <td>Gépfegyver</td>
+            <td>500000Ft</td>
+            <td>5 hét</td>
+            <td>3</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#015</td>
+            <td>Arsenal</td>
+            <td>Gránátvető</td>
+            <td>2400000Ft</td>
+            <td>5 hónap</td>
+            <td>Csak előrendelésre</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#016</td>
+            <td>Luger</td>
+            <td>Taposóakna</td>
+            <td>610000Ft</td>
+            <td>4 hónap</td>
+            <td>Csak rendelésre</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#017</td>
+            <td>Teller Ede</td>
+            <td>Napalm</td>
+            <td>0Ft</td>
+            <td>0 hét</td>
+            <td>Már nem kapható</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#018</td>
+            <td>Elon Musk</td>
+            <td>Lángszóró</td>
+            <td>950000Ft</td>
+            <td>5 hónap</td>
+            <td>Csak előrendelésre</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#019</td>
+            <td>Mascara</td>
+            <td>Vízhatlan ágyúgolyó</td>
+            <td>400000Ft</td>
+            <td>2-3 hét</td>
+            <td>10</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#020</td>
+            <td>Solingen</td>
+            <td>Körömvágó olló</td>
+            <td>6700Ft</td>
+            <td>1 hét</td>
+            <td>56</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#021</td>
+            <td>Tupperware</td>
+            <td>Konzervnyitó</td>
+            <td>4700Ft</td>
+            <td>1 hét</td>
+            <td>47</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#022</td>
+            <td>Zippo</td>
+            <td>Öngyújtó folyadék</td>
+            <td>1200Ft</td>
+            <td>1 hét</td>
+            <td>67</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#023</td>
+            <td>Shell</td>
+            <td>Vitriol (800ml)</td>
+            <td>7700Ft</td>
+            <td>1 hét</td>
+            <td>28</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#024</td>
+            <td>Bonaszén</td>
+            <td>Szén (3Kg)</td>
+            <td>1500Ft</td>
+            <td>1 hét</td>
+            <td>74</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+            <tr>
+            <td>#025</td>
+            <td>Vécsey</td>
+            <td>Kézigránát (3Db)</td>
+            <td>15000Ft</td>
+            <td>1-2 hét</td>
+            <td>36</td>
+            <td>
+                <input type="submit" name="kosarba" value="kosárba">
+            </td>
+            </tr>
+        </tbody>
+    </table>
+    </section>  
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 0.0.1
+    </div>
+    <strong>Copyright &copy; 2018<a href="https://sufferingstudio.com">Suffering Studio </a>.</strong> All rights
+    reserved.
+  </footer>
+
+  
+          <!-- /.form-group -->
+        </form>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="/bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/dist/js/demo.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.sidebar-menu').tree()
+  })
+</script>
+</body>
+</html>
