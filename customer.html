@@ -27,6 +27,18 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <style>
+    .sSpan {
+      margin-left: 10px;
+      text-decoration: underline;
+    }
+
+    #customerH1 {
+      font-weight: bold;
+      font-size: 2em;
+    }
+
+  </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
@@ -90,42 +102,46 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <h1>
-          Vásárlók:
-          <small>akikkel a hűség kezdődik</small>
-        </h1>
-      </section>
-  
-
-    <!-- Main content -->
-    <section class="content">
-        <!--Customer table-->
-        <table id="example2" class="table table-bordered table-hover">
+    <div class="box">
+          <div class="box-header">
+            <h1 id="customerH1">Vásárlók
+              <small>akikkel a hűség kezdődik</small>
+            </h1>
+          <div class="col-sm-6">
+            <div id="example1_filter" class="dataTables_filter">
+              <label>Search:
+                <input class="form-control input-sm" aria-controls="example1" 
+                type="search">
+              </label>
+            </div>
+          </div>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <table id="example1" class="table table-bordered table-striped">
                 <thead>
-                    <th><i class="fa fa-id-card"></i>|Azonosító:</th>
-                    <th><i class="fa fa-android"></i>|Név:</th>
-                    <th><i class="fa fa-envelope"></i>|E-mail cím:</th>
-                    <th><i class="fa fa-phone-square"></i>|Telefonszám:</i></th>
-                    <th><i class="fa fa-hourglass"></i>|Kor:</th>
-                    <th><i class="fa fa-bitcoin"></i>|Elköltött pénz:</th>
-                    <th><i class="fa fa-credit-card"></i>|Egyenleg:</th>
+                    <th><i class="fa fa-id-card"></i><span class="sSpan">Azonosító:</span></th>
+                    <th><i class="fa fa-android"></i><span class="sSpan">Név:</span></th>
+                    <th><i class="fa fa-envelope"></i><span class="sSpan">E-mail cím:</span></th>
+                    <th><i class="fa fa-phone-square"></i><span class="sSpan">Telefonszám:</span></th>
+                    <th><i class="fa fa-hourglass"></i><span class="sSpan">Kor:</span></th>
+                    <th><i class="fa fa-bitcoin"></i><span class="sSpan">Költött pénz:</span></th>
+                    <th><i class="fa fa-credit-card"></i><span class="sSpan">Egyenleg:</span></th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>#1</td>
                         <td>Szürke Gandalf</td>
-                        <td>magus@gmail.com</td>
+                        <td><a href="mailto:magus@gmail.com">magus@gmail.com</a></td>
                         <td>06304573849</td>
-                        <td>200</td>
+                        <td>2000</td>
                         <td>13400 Ft</td>
                         <td>34000 Ft</td>
                     </tr>
                     <tr>
                         <td>#2</td>
                         <td>Luke Skywalker</td>
-                        <td>jedi@knight.com</td>
+                        <td><a href="mailto:jedi@knight.com">jedi@knight.com</a></td>
                         <td>06705738324</td>
                         <td>57</td>
                         <td>200000 Ft</td>
@@ -134,7 +150,7 @@
                     <tr>
                         <td>#3</td>
                         <td>Spock</td>
-                        <td>logical@reasoning.com</td>
+                        <td><a href="mailto:logical@reasoning.com">logical@reasoning.com</a></td>
                         <td>06809687456</td>
                         <td>69</td>
                         <td>15600 Ft</td>
@@ -143,7 +159,7 @@
                     <tr>
                         <td>#4</td>
                         <td>Illidan Stormrage</td>
-                        <td>demon@hunter.com</td>
+                        <td><a href="mailto:demon@hunter.com">demon@hunter.com</a></td>
                         <td>06505675868</td>
                         <td>456</td>
                         <td>22000 Ft</td>
@@ -152,7 +168,7 @@
                     <tr>
                         <td>#5</td>
                         <td>Geralt of Rivia</td>
-                        <td>witcher@wolf.com</td>
+                        <td><a href="mailto:witcher@wolf.com">witcher@wolf.com</a></td>
                         <td>06506783456</td>
                         <td>46</td>
                         <td>2500 Ft</td>
@@ -161,7 +177,7 @@
                     <tr>
                         <td>#6</td>
                         <td>Malfurion Stormrage</td>
-                        <td>druid@wild.com</td>
+                        <td><a href="mailto:druid@wild.com">druid@wild.com</a></td>
                         <td>06604356677</td>
                         <td>458</td>
                         <td>4000 Ft</td>
@@ -170,16 +186,16 @@
                     <tr>
                         <td>#7</td>
                         <td>Legolas Greenleaf</td>
-                        <td>green@leaf.com</td>
+                        <td><a href="mailto:green@leaf.com">green@leaf.com</a></td>
                         <td>06602300876</td>
-                        <td>2145</td>
+                        <td>5000</td>
                         <td>0 Ft</td>
                         <td>0 Ft</td>
                     </tr>
                     <tr>
                         <td>#8</td>
                         <td>John Wick</td>
-                        <td>JW@continental.com</td>
+                        <td><a href="mailto:JW@continental.com">JW@continental.com</a></td>
                         <td>06900000001</td>
                         <td>38</td>
                         <td>3000000 Ft</td>
@@ -188,7 +204,7 @@
                     <tr>
                         <td>#9</td>
                         <td>Bill Cipher</td>
-                        <td>crypto@graphy.com</td>
+                        <td><a href="mailto:crypto@graphy.com">crypto@graphy.com</a></td>
                         <td>06123456789</td>
                         <td>???</td>
                         <td>0 Ft</td>
@@ -196,15 +212,16 @@
                     </tr>
                     <tr>
                         <td>#10</td>
-                        <td>Sauron</td>
-                        <td>dark@lord.com</td>
+                        <td>Mario</td>
+                        <td><a href="mailto:plumber@japitaly.com">plumber@japitaly.com</a></td>
                         <td>061345673</td>
-                        <td>3540</td>
+                        <td>37</td>
                         <td>0 Ft</td>
                         <td>2455555 Ft</td>
                     </tr>
                 </tbody>
             </table>
+          </div>
     </section>  
   </div>
   <!-- /.content-wrapper -->
