@@ -28,7 +28,7 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-purple sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
 
@@ -98,6 +98,7 @@
     <!-- Content Header (Page header) -->
    
 <h2>Nálunk szeretettel vásárolható termékek:</h2>
+<input type="button" id="kosartartalom" name="kosartartalom" value="Kosár tartalma" onclick="kosartartalom()">
 
     <table id="example2" class="table table-bordered table-hover" >
     <thead>
@@ -120,7 +121,8 @@
             <td>1 hét</td>
             <td>23</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="vadaszkes" min="1" max="23">
+                <input type="submit" name="vadaszkes" value="kosárba" onclick="vadaszkes()">
             </td>
             </tr>
             <tr>
@@ -131,10 +133,11 @@
             <td>1-2 hét</td>
             <td>5</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="szamurajkard" min="1" max="5">
+                <input type="submit" name="szamurajkard" value="kosárba" onclick="szamurajkard()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#003</td>
             <td>Jurátus</td>
             <td>Török szablya</td>
@@ -142,10 +145,11 @@
             <td>1 hét</td>
             <td>12</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="torokszablya" min="1" max="12">
+                <input type="submit" name="torokszablya" value="kosárba" onclick="torokszablya()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#004</td>
             <td>Kossuth</td>
             <td>Hosszú kard</td>
@@ -153,10 +157,11 @@
             <td>1 hét</td>
             <td>9</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="hosszukard" min="1" max="9">
+                <input type="submit" name="hosszukard" value="kosárba" onclick="hosszukard()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#005</td>
             <td>Karl Elsner</td>
             <td>Svájci bicska</td>
@@ -164,10 +169,11 @@
             <td>1 hét</td>
             <td>37</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="svajcibicska" min="1" max="37">
+                <input type="submit" name="svajcibicska" value="kosárba" onclick="svajcibicska()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#006</td>
             <td>Zippo</td>
             <td>Öngyújtó</td>
@@ -175,10 +181,11 @@
             <td>1 hét</td>
             <td>34</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="ongyujto" min="1" max="34">
+                <input type="submit" name="ongyujto" value="kosárba" onclick="ongyujto()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#007</td>
             <td>Colt</td>
             <td>.45 pisztoly</td>
@@ -186,10 +193,11 @@
             <td>2-3 hét</td>
             <td>7</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="pisztoly" min="1" max="7">
+                <input type="submit" name="pisztoly" value="kosárba" onclick="pisztoly()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#008</td>
             <td>Magnum</td>
             <td>.45 revolver</td>
@@ -197,21 +205,23 @@
             <td>2-3 hét</td>
             <td>6</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="revolver" min="1" max="6">
+                <input type="submit" name="revolver" value="kosárba" onclick="revolver()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#009</td>
             <td>Zippo</td>
             <td>Lőpor</td>
-            <td>2500Ft (/g)</td>
+            <td>2500Ft (1000g/cs)</td>
             <td>1 hét</td>
-            <td>1000 (g)</td>
+            <td>1000</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="lopor" min="1" max="1000">
+                <input type="submit" name="lopor" value="kosárba" onclick="lopor()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#010</td>
             <td>Colt</td>
             <td>Pisztolygolyó</td>
@@ -219,10 +229,11 @@
             <td>1 hét</td>
             <td>250</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="pisztolygolyo" min="1" max="250">
+                <input type="submit" name="pisztolygolyo" value="kosárba" onclick="pisztolygolyo()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#011</td>
             <td>Winchester</td>
             <td>Duplacsöves puska</td>
@@ -230,10 +241,11 @@
             <td>2-3 hét</td>
             <td>4</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="puska" min="1" max="4">
+                <input type="submit" name="puska" value="kosárba" onclick="puska()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#012</td>
             <td>Winchester</td>
             <td>Vadászpuska</td>
@@ -241,10 +253,11 @@
             <td>2-3 hét</td>
             <td>3</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="vadaszpuska" min="1" max="3">
+                <input type="submit" name="vadaszpuska" value="kosárba" onclick="vadaszpuska()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#013</td>
             <td>General Electric</td>
             <td>M134 Minigun</td>
@@ -252,10 +265,11 @@
             <td>3 hónap</td>
             <td>Csak előrendelésre</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="minigun" min="1" max="1">
+                <input type="submit" name="minigun" value="kosárba" onclick="minigun()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#014</td>
             <td>M16</td>
             <td>Gépfegyver</td>
@@ -263,10 +277,11 @@
             <td>5 hét</td>
             <td>3</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="gepfegyver" min="1" max="3">
+                <input type="submit" name="gepfegyver" value="kosárba" onclick="gepfegyver()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#015</td>
             <td>Arsenal</td>
             <td>Gránátvető</td>
@@ -274,21 +289,23 @@
             <td>5 hónap</td>
             <td>Csak előrendelésre</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="granatveto" min="1" max="1">
+                <input type="submit" name="granatveto" value="kosárba" onclick="granatveto()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#016</td>
             <td>Luger</td>
             <td>Taposóakna</td>
             <td>610000Ft</td>
             <td>4 hónap</td>
-            <td>Csak rendelésre</td>
+            <td>Csak előrendelésre</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="akna" min="1" max="1">
+                <input type="submit" name="akna" value="kosárba" onclick="akna()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#017</td>
             <td>Teller Ede</td>
             <td>Napalm</td>
@@ -296,10 +313,10 @@
             <td>0 hét</td>
             <td>Már nem kapható</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="submit" name="kosarba" value="kosárba" disabled>
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#018</td>
             <td>Elon Musk</td>
             <td>Lángszóró</td>
@@ -307,10 +324,11 @@
             <td>5 hónap</td>
             <td>Csak előrendelésre</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="langszoro" min="1" max="1">
+                <input type="submit" name="langszoro" value="kosárba" onclick="langszoro()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#019</td>
             <td>Mascara</td>
             <td>Vízhatlan ágyúgolyó</td>
@@ -318,10 +336,11 @@
             <td>2-3 hét</td>
             <td>10</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="agyugolyo" min="1" max="10">
+                <input type="submit" name="agyugolyo" value="kosárba" onclick="agyugolyo()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#020</td>
             <td>Solingen</td>
             <td>Körömvágó olló</td>
@@ -329,10 +348,11 @@
             <td>1 hét</td>
             <td>56</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="ollo" min="1" max="56">
+                <input type="submit" name="ollo" value="kosárba" onclick="ollo()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#021</td>
             <td>Tupperware</td>
             <td>Konzervnyitó</td>
@@ -340,10 +360,11 @@
             <td>1 hét</td>
             <td>47</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="konzervnyito" min="1" max="47">
+                <input type="submit" name="konzervnyito" value="kosárba" onclick="konzervnyito()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#022</td>
             <td>Zippo</td>
             <td>Öngyújtó folyadék</td>
@@ -351,10 +372,11 @@
             <td>1 hét</td>
             <td>67</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="onfolyadek" min="1" max="67">
+                <input type="submit" name="onfolyadek" value="kosárba" onclick="onfolyadek()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#023</td>
             <td>Shell</td>
             <td>Vitriol (800ml)</td>
@@ -362,34 +384,38 @@
             <td>1 hét</td>
             <td>28</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="vitriol" min="1" max="28">
+                <input type="submit" name="vitriol" value="kosárba" onclick="vitriol()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#024</td>
             <td>Bonaszén</td>
-            <td>Szén (3Kg)</td>
+            <td>Szén (3Kg/cs)</td>
             <td>1500Ft</td>
             <td>1 hét</td>
             <td>74</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="szen" min="1" max="74">
+                <input type="submit" name="szen" value="kosárba" onclick="szen()">
             </td>
-            </tr>
-            <tr>
+        </tr>
+        <tr>
             <td>#025</td>
             <td>Vécsey</td>
-            <td>Kézigránát (3Db)</td>
+            <td>Kézigránát (3Db/cs)</td>
             <td>15000Ft</td>
             <td>1-2 hét</td>
             <td>36</td>
             <td>
-                <input type="submit" name="kosarba" value="kosárba">
+                <input type="number" id="granat" min="1" max="36">
+                <input type="submit" name="granat" value="kosárba" onclick="granat()">
             </td>
             </tr>
 
         </tbody>
-    </Table>
+    </table>
+    <a href='#kosartartalom'>vissza a lap tetejére</a>
 </div>
    <!-- /.content-wrapper -->
 
@@ -432,5 +458,6 @@
         $('.sidebar-menu').tree()
       })
     </script>
+    <script src="product.js"></script>
     </body>
     </html>
