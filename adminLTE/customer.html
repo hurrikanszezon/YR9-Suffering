@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,226 +38,273 @@
       font-weight: bold;
       font-size: 2em;
     }
-
   </style>
 </head>
+
 <body class="hold-transition skin-blue sidebar-mini">
-<!-- Site wrapper -->
-<div class="wrapper">
+  <!-- Site wrapper -->
+  <div class="wrapper">
 
-  <header class="main-header">
-    <!-- Logo -->
-    <a href="login.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>T</b>Bu</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>TEAM</b>Buffering</span>
-    </a>
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
-    <!-- Sidebar toggle button-->
-    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </a>
-    </nav>
-  </header>
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="login.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini">
+          <b>T</b>Bu</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg">
+          <b>TEAM</b>Buffering</span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+      </nav>
+    </header>
 
-  <!-- =============================================== -->
+    <!-- =============================================== -->
 
-  <!-- Left side column. contains the sidebar -->
-  <aside class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-               <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">Főmenü</li>
-        <li>
-          <a href="login.html">
-            <i class="fa fa-circle-thin"></i> <span>Bejelentkezés</span>
-          </a>
-        </li>
-        <li>
-          <a href="customer.html">
-            <i class="fa fa-address-card-o"></i> <span>Vásárlók</span>
-          </a>
-        </li>
-        <li>
-          <a href="product.html">
-            <i class="fa fa-television"></i> <span>Termékek</span>
-          </a>
-        </li>
-        <li>
-          <a href="order.html">
-            <i class="fa fa-shopping-basket"></i> <span>Rendelés</span>
-          </a>  
-        </li>
-      </ul>
-    </section>
-    <!-- /.sidebar -->
-  </aside>
+    <!-- Left side column. contains the sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">Főmenü</li>
+          <li>
+            <a href="login.html">
+              <i class="fa fa-circle-thin"></i>
+              <span>Bejelentkezés</span>
+            </a>
+          </li>
+          <li>
+            <a href="customer.html">
+              <i class="fa fa-address-card-o"></i>
+              <span>Vásárlók</span>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <i class="fa fa-television"></i>
+              <span>Termékek</span>
+            </a>
+          </li>
+          <li>
+            <a href="order.html">
+              <i class="fa fa-shopping-basket"></i>
+              <span>Rendelés</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
 
-  <!-- =============================================== -->
+    <!-- =============================================== -->
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
       <!--<div class="box">-->
-          <div class="box-header">
-            <h1 id="customerH1">Vásárlók
-              <small>akikkel a hűség kezdődik</small>
-            </h1>
-          <div class="col-sm-6">
-            <div id="example1_filter" class="dataTables_filter">
-              <label>Keresés:
-                <input class="form-control input-sm" aria-controls="example1" 
-                type="search">
-              </label>
-            </div>
+      <div class="box-header">
+        <h1 id="customerH1">Vásárlók
+          <small>akikkel a hűség kezdődik</small>
+        </h1>
+        <div class="col-sm-6">
+          <div id="example1_filter" class="dataTables_filter">
+            <label>Keresés:
+              <input class="form-control input-sm" aria-controls="example1" type="search">
+            </label>
           </div>
-          </div>
-          <!-- /.box-header -->
-          <section class="content">
-          <div class="box-body">
-            <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                    <th><i class="fa fa-id-card"></i><span class="sSpan">Azonosító:</span></th>
-                    <th><i class="fa fa-android"></i><span class="sSpan">Név:</span></th>
-                    <th><i class="fa fa-envelope"></i><span class="sSpan">E-mail cím:</span></th>
-                    <th><i class="fa fa-phone-square"></i><span class="sSpan">Telefonszám:</span></th>
-                    <th><i class="fa fa-hourglass"></i><span class="sSpan">Kor:</span></th>
-                    <th><i class="fa fa-bitcoin"></i><span class="sSpan">Költött pénz:</span></th>
-                    <th><i class="fa fa-credit-card"></i><span class="sSpan">Egyenleg:</span></th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>#1</td>
-                        <td>Szürke Gandalf</td>
-                        <td><a href="mailto:magus@gmail.com">magus@gmail.com</a></td>
-                        <td>06304573849</td>
-                        <td>2000</td>
-                        <td>13400 Ft</td>
-                        <td>34000 Ft</td>
-                    </tr>
-                    <tr>
-                        <td>#2</td>
-                        <td>Luke Skywalker</td>
-                        <td><a href="mailto:jedi@knight.com">jedi@knight.com</a></td>
-                        <td>06705738324</td>
-                        <td>57</td>
-                        <td>200000 Ft</td>
-                        <td>15000 Ft</td>
-                    </tr>
-                    <tr>
-                        <td>#3</td>
-                        <td>Spock</td>
-                        <td><a href="mailto:logical@reasoning.com">logical@reasoning.com</a></td>
-                        <td>06809687456</td>
-                        <td>69</td>
-                        <td>15600 Ft</td>
-                        <td>34000 Ft</td>
-                    </tr>
-                    <tr>
-                        <td>#4</td>
-                        <td>Illidan Stormrage</td>
-                        <td><a href="mailto:demon@hunter.com">demon@hunter.com</a></td>
-                        <td>06505675868</td>
-                        <td>456</td>
-                        <td>22000 Ft</td>
-                        <td>1560 Ft</td>
-                    </tr>
-                    <tr>
-                        <td>#5</td>
-                        <td>Geralt of Rivia</td>
-                        <td><a href="mailto:witcher@wolf.com">witcher@wolf.com</a></td>
-                        <td>06506783456</td>
-                        <td>46</td>
-                        <td>2500 Ft</td>
-                        <td>15400 Ft</td>
-                    </tr>
-                    <tr>
-                        <td>#6</td>
-                        <td>Malfurion Stormrage</td>
-                        <td><a href="mailto:druid@wild.com">druid@wild.com</a></td>
-                        <td>06604356677</td>
-                        <td>458</td>
-                        <td>4000 Ft</td>
-                        <td>5000 Ft</td>
-                    </tr>
-                    <tr>
-                        <td>#7</td>
-                        <td>Legolas Greenleaf</td>
-                        <td><a href="mailto:green@leaf.com">green@leaf.com</a></td>
-                        <td>06602300876</td>
-                        <td>5000</td>
-                        <td>0 Ft</td>
-                        <td>0 Ft</td>
-                    </tr>
-                    <tr>
-                        <td>#8</td>
-                        <td>John Wick</td>
-                        <td><a href="mailto:JW@continental.com">JW@continental.com</a></td>
-                        <td>06900000001</td>
-                        <td>38</td>
-                        <td>3000000 Ft</td>
-                        <td>46000000 Ft</td>
-                    </tr>
-                    <tr>
-                        <td>#9</td>
-                        <td>Bill Cipher</td>
-                        <td><a href="mailto:crypto@graphy.com">crypto@graphy.com</a></td>
-                        <td>06123456789</td>
-                        <td>???</td>
-                        <td>0 Ft</td>
-                        <td>400000 Ft</td>
-                    </tr>
-                    <tr>
-                        <td>#10</td>
-                        <td>Mario</td>
-                        <td><a href="mailto:plumber@japitaly.com">plumber@japitaly.com</a></td>
-                        <td>061345673</td>
-                        <td>37</td>
-                        <td>0 Ft</td>
-                        <td>2455555 Ft</td>
-                    </tr>
-                </tbody>
-            </table>
+        </div>
+      </div>
+      <!-- /.box-header -->
+      <section class="content">
+        <div class="box-body">
+          <table id="example1" class="table table-bordered table-striped">
+            <thead>
+              <th>
+                <i class="fa fa-id-card"></i>
+                <span class="sSpan">Azonosító:</span>
+              </th>
+              <th>
+                <i class="fa fa-android"></i>
+                <span class="sSpan">Név:</span>
+              </th>
+              <th>
+                <i class="fa fa-envelope"></i>
+                <span class="sSpan">E-mail cím:</span>
+              </th>
+              <th>
+                <i class="fa fa-phone-square"></i>
+                <span class="sSpan">Telefonszám:</span>
+              </th>
+              <th>
+                <i class="fa fa-hourglass"></i>
+                <span class="sSpan">Kor:</span>
+              </th>
+              <th>
+                <i class="fa fa-bitcoin"></i>
+                <span class="sSpan">Költött pénz:</span>
+              </th>
+              <th>
+                <i class="fa fa-credit-card"></i>
+                <span class="sSpan">Egyenleg:</span>
+              </th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1</td>
+                <td>Szürke Gandalf</td>
+                <td>
+                  <a href="mailto:magus@gmail.com">magus@gmail.com</a>
+                </td>
+                <td>06304573849</td>
+                <td>2000</td>
+                <td>13400 Ft</td>
+                <td>34000 Ft</td>
+              </tr>
+              <tr>
+                <td>#2</td>
+                <td>Luke Skywalker</td>
+                <td>
+                  <a href="mailto:jedi@knight.com">jedi@knight.com</a>
+                </td>
+                <td>06705738324</td>
+                <td>57</td>
+                <td>200000 Ft</td>
+                <td>15000 Ft</td>
+              </tr>
+              <tr>
+                <td>#3</td>
+                <td>Spock</td>
+                <td>
+                  <a href="mailto:logical@reasoning.com">logical@reasoning.com</a>
+                </td>
+                <td>06809687456</td>
+                <td>69</td>
+                <td>15600 Ft</td>
+                <td>34000 Ft</td>
+              </tr>
+              <tr>
+                <td>#4</td>
+                <td>Illidan Stormrage</td>
+                <td>
+                  <a href="mailto:demon@hunter.com">demon@hunter.com</a>
+                </td>
+                <td>06505675868</td>
+                <td>456</td>
+                <td>22000 Ft</td>
+                <td>1560 Ft</td>
+              </tr>
+              <tr>
+                <td>#5</td>
+                <td>Geralt of Rivia</td>
+                <td>
+                  <a href="mailto:witcher@wolf.com">witcher@wolf.com</a>
+                </td>
+                <td>06506783456</td>
+                <td>46</td>
+                <td>2500 Ft</td>
+                <td>15400 Ft</td>
+              </tr>
+              <tr>
+                <td>#6</td>
+                <td>Malfurion Stormrage</td>
+                <td>
+                  <a href="mailto:druid@wild.com">druid@wild.com</a>
+                </td>
+                <td>06604356677</td>
+                <td>458</td>
+                <td>4000 Ft</td>
+                <td>5000 Ft</td>
+              </tr>
+              <tr>
+                <td>#7</td>
+                <td>Legolas Greenleaf</td>
+                <td>
+                  <a href="mailto:green@leaf.com">green@leaf.com</a>
+                </td>
+                <td>06602300876</td>
+                <td>5000</td>
+                <td>0 Ft</td>
+                <td>0 Ft</td>
+              </tr>
+              <tr>
+                <td>#8</td>
+                <td>John Wick</td>
+                <td>
+                  <a href="mailto:JW@continental.com">JW@continental.com</a>
+                </td>
+                <td>06900000001</td>
+                <td>38</td>
+                <td>3000000 Ft</td>
+                <td>46000000 Ft</td>
+              </tr>
+              <tr>
+                <td>#9</td>
+                <td>Bill Cipher</td>
+                <td>
+                  <a href="mailto:crypto@graphy.com">crypto@graphy.com</a>
+                </td>
+                <td>06123456789</td>
+                <td>???</td>
+                <td>0 Ft</td>
+                <td>400000 Ft</td>
+              </tr>
+              <tr>
+                <td>#10</td>
+                <td>Mario</td>
+                <td>
+                  <a href="mailto:plumber@japitaly.com">plumber@japitaly.com</a>
+                </td>
+                <td>061345673</td>
+                <td>37</td>
+                <td>0 Ft</td>
+                <td>2455555 Ft</td>
+              </tr>
+            </tbody>
+          </table>
           <!--</div>-->
-        </section>   
-  </div>
-  <!-- /.content-wrapper -->
+      </section>
+      </div>
+      <!-- /.content-wrapper -->
 
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 0.0.1
-    </div>
-    <strong>Copyright &copy; 2018<a href="https://bufferingstudio.com">Buffering Studio </a>.</strong> All rights
-    reserved.
-  </footer>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>Version</b> 0.0.1
+        </div>
+        <strong>Copyright &copy; 2018
+          <a href="https://bufferingstudio.com">Buffering Studio </a>.</strong> All rights reserved.
+      </footer>
+      <!-- /.control-sidebar -->
+      <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
-</div>
-<!-- ./wrapper -->
+      <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
 
-<!-- jQuery 3 -->
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- SlimScroll -->
-<script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="/bower_components/fastclick/lib/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="/dist/js/demo.js"></script>
-<script>
-  $(document).ready(function () {
-    $('.sidebar-menu').tree()
-  })
-</script>
+    <!-- jQuery 3 -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="/bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/dist/js/demo.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.sidebar-menu').tree()
+      })
+    </script>
 </body>
+
 </html>
