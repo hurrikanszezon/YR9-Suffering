@@ -63,7 +63,7 @@ body{
     object-fit: contain;
    height: 100%;
    position: absolute;
-    bottom:-10px;
+    bottom:0px;
    }
 
 .container_onethird_img {  
