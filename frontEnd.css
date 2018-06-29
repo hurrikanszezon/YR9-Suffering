@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Nunito;
+    src: url('fonts/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Josefin;
+    src: url('fonts/Nunito/Nunito-Regular.ttf');
+}
+
+.section_2background {
+    background-image: url('YR9-TeamBuffering/frontEndImages/rowofswords.jpg');
+    width: 100%;
+}
+
+.container_2background {
+    background-color: rgba(78, 78, 76, 0.5);
+    position: absolute;
+    width: 100%;
+}
+
+.container {}
+
+
+.pg_header {}
+
+.nav_header {}
+
+
+section {
+    font-family: Nunito;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Josefin;
+}
+
+.nav_header_a {}
+
+.header_img {}
+
+.header_btn {}
+
+.header_h3 {}
+
+.header.h1 {}
+
+.header_p {}
+
+.container_onethird_h4 {}
+
+.container_onethird_p {}
+
+.container_twothird_h2 {}
+
+.container_twothird_p {}
+
+.container_onethird_img {}
+
+.container_half_img {}
+
+.container_half_h2 {}
+
+.container_half_p {}
+
+.full_2background {}
+
+.full_2background_p {}
+
+.full_2background_h6 {}
+
+.container_full_p {}
+
+.container_full_h2 {}
+
+.container_full_h5 {}
+
+.container_full_btn {}
+
+.pg_footer {}
+
+.nav_footer {}
+
+.nav_footer_a_twitter {}
+
+.nav_footer_a_twitter:hover {
+    color: rgb(31, 136, 177);
+    cursor: pointer;
+}
+
+.nav_footer_a_fb {}
+
+.nav_footer_a_fb:hover {
+    color: rgb(8, 8, 92)
+    cursor: pointer;
+}
+
+.nav_footer_a_yt {}
+
+.nav_footer_a_yt:hover {
+    color: rgb(156, 5, 5);
+    cursor: pointer;
+}
+
+.nav_footer_a_twitch {}
+
+.nav_footer_a_twitch:hover {
+    color: rgb(51, 7, 65);
+    cursor: pointer;
+}
+
+.nav_footer_a_steam {}
+
+
+.nav_footer_a_steam:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.email_input {}
+
+.onethird {}
+
+.twothird {}
+
+.full {}
+
+.half {}
+
+.header_h3 {}
+
+.header.h1 {}
