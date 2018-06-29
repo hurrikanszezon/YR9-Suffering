@@ -38,6 +38,10 @@ section {
     font-family: Nunito;
 }
 
+footer {
+    font-family: Nunito;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Josefin;
 }
@@ -81,9 +85,32 @@ h1, h2, h3, h4, h5, h6 {
 .container_full_h2 {}
 
 .container_full_h5 {}
+/*Two buttons included download section*/
+.download-section{
+    padding: 100px;
 
-.container_full_btn {}
+}
 
+.download-text {
+    padding: 120px;
+}
+.download-btn {
+    background-color: #4CAF50;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius:20px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 23px 12px 23px;
+    font-family: Nunito;
+    margin: 2px;
+    
+}
+/*Footer*/
 .pg_footer {
     border-top: 1px solid #888
 }
@@ -98,9 +125,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav_footer a {
     color: #333;
-    padding: 10px;
+    padding-right: 15px;
+    text-decoration: none;
 }
-
+.footer_p{
+    margin: 5px;
+    font-size: 12px;
+    color: #888;
+}
 .nav_footer_a_twitter {}
 
 .nav_footer_a_twitter:hover {
@@ -137,21 +169,28 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+.fa-copyright {
+    font-size: 80%;
+}
+
 .email_input {}
 
 .onethird {}
 
 .twothird {}
 
-.full {}
+.full {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
 
 .half {  
     position: relative;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 5px;
     width: calc(50% - 20px);
     float: left;
-    border: 2px solid black;
     text-align: center;
 }
 
