@@ -1,20 +1,36 @@
-.pg_header {background-color: rgb(59, 111, 189)}
+.pg_header {background-color: rgb(59, 111, 189);
+    background: linear-gradient(45deg,#49c5da ,#012e4f);}
 
 .pg_header .container {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
     overflow: auto;
-    max-height: 300px
+    max-height: 300px;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white
 }
+.pg_header .container .nav_header {
+    float: right; 
+    }
 
-.pg_header .container .one-third  {
+.pg_header .container .onethird  {
     padding: 10px;
-    width: calc(33% - 20px);
+    width: calc(33% - 40px);
     float: left;
-    margin: 10px;
-    height: 300px; object-fit: contain;
+      margin: 10px;
+    height: 240px; object-fit: contain;
    }
 
 .header_img {height: 100%; width: 100%; object-fit: contain}
-    
+
+.pg_header .container .twothird  {
+    padding: 10px;
+    width: calc(66% - 40px);
+    float: right;
+    margin: 10px;
+    height: 200px; object-fit: contain;
+   }
+   
+   .pg_header .container .nav_header a{ text-decoration: none; }
