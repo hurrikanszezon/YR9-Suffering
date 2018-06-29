@@ -223,7 +223,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .email_input {}
 
-.onethird {}
+.onethird {    padding: 10px;
+    width: calc(33% - 40px);
+    float: left;
+      margin: 10px;
+     object-fit: contain;
+   }
 
 .twothird {}
 
