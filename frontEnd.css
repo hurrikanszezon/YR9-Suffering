@@ -87,14 +87,16 @@ h1, h2, h3, h4, h5, h6 {
 .container_full_h5 {}
 /*Two buttons included download section*/
 .download-section{
-    padding: 100px;
-
+    position: relative;
+    box-sizing: border-box;
+    padding: 100px 0;
+    border-top: 2px solid black;
+}
+.download-section .full .container_full_h2 {
+    padding: 60px 0;
 }
 
-.download-text {
-    padding: 120px;
-}
-.download-btn {
+.download-btn, .header_btn{
     background-color: #4CAF50;
     -webkit-border-radius:20px;
     -moz-border-radius:20px;
@@ -112,7 +114,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*Footer*/
 .pg_footer {
-    border-top: 1px solid #888
+    border-top: 1px solid #888;
+    padding: 10px;
 }
 
 .pg_footer .social:hover {
