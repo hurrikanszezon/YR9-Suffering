@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 35px 0;
 }
 
-.download-btn, {
+.download-btn {
     background-color: #004c97;
     -webkit-border-radius:20px;
     -moz-border-radius:20px;
