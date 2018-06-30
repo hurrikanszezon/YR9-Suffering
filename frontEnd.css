@@ -1,22 +1,28 @@
 @font-face {
     font-family: Nunito;
-    src: url('fonts/Nunito/Nunito-Regular.ttf');
+    src: url('/fonts/Nunito/Nunito-Regular.ttf');
 }
 
 @font-face {
     font-family: Josefin;
-    src: url('fonts/Nunito/Nunito-Regular.ttf');
+    src: url('/fonts/Josefin_Sans/JosefinSans-Regular.ttf');
 }
 
 .section_2background {
-    background-image: url('YR9-TeamBuffering/frontEndImages/rowofswords.jpg');
-    width: 100%;
+    position: relative;
+    background-image: url('/frontEndImages/rowofswords.jpg');
+    max-width: 1200px;
+    height: 10em;
+    margin: 0 auto;
 }
 
 .container_2background {
-    background-color: rgba(78, 78, 76, 0.5);
-    position: absolute;
-    width: 100%;
+    background-color: #407395dd;
+    overflow: auto;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    height:inherit;
 }
 
 .container {}
@@ -65,9 +71,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .full_2background {}
 
-.full_2background_p {}
+.full_2background_p {
+    font-size: 2em;
+}
 
-.full_2background_h6 {}
+.full_2background_h6 {
+    font-size: 2em;
+    margin: 0 auto;
+}
 
 .container_full_p {}
 
