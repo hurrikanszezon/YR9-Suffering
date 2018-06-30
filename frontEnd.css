@@ -5,29 +5,27 @@
 
 @font-face {
     font-family: Josefin;
-<<<<<<< HEAD
-    src: url('/fonts/Josefin_Sans/JosefinSans-Regular.ttf');
-=======
     src: url('fonts/Josefin_Sans/JosefinSans-Regular.ttf');
 }
 body{
     margin: 0;
->>>>>>> b57f1017b7973890415a4507da187303bbfd19ac
 }
 .section_2background {
     position: relative;
     background-image: url('/frontEndImages/rowofswords.jpg');
-    max-width: 1200px;
-    height: 10em;
-    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto 0;
+    box-sizing: border-box;
 }
 .teamlogo {
     max-height: 30px
 }
 .container_2background {
     background-color: #407395dd;
-    overflow: auto;
-    max-width: 1200px;
+    overflow: hidden;
+    width: inherit;
     position: relative;
     margin: 0 auto;
     height:inherit;
@@ -75,6 +73,49 @@ body{
    position: absolute;
     bottom:0px;
    }
+
+/*3 kép*/
+.section_weapons3 {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin: auto 0;
+}
+
+.container.weapons3 {
+    width: inherit;
+    position: relative;
+    margin: 0 auto;
+    height:inherit;
+    float: left;
+}
+
+.onethird.rocket {
+    width: inherit;
+    float: right;
+    position: absolute;
+    bottom:0;
+    object-fit: contain;
+   height: 100%
+}
+
+.onethird.watergun {
+   width: inherit;
+    float: right;
+    position: absolute;
+    bottom:0;
+    object-fit: contain;
+   height: 100%
+}
+
+.onethird.sword {
+   width: inherit;
+    float: right;
+    position: absolute;
+    bottom:0;
+    object-fit: contain;
+   height: 100%
+}
 
 .container_onethird_img {  
     width: inherit;
@@ -184,15 +225,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .container_half_p {}
 
-.full_2background {}
+.full_2background {
+    padding: 0;
+    margin: 5% auto;
+    width: 50%;
+    text-align: center;
+}
 
 .full_2background_p {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .full_2background_h6 {
     font-size: 2em;
     margin: 0 auto;
+}
+
+.section_instant_hadsereg {
+    background-color: #f5f5f5;
+    margin: 0;
 }
 
 .container_full_p {}
@@ -338,6 +389,11 @@ background: #f5f5f5
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
+}
+
+#quote {
+    margin: auto;
+    width: 50%;
 }
 
 .nav_footer a {
