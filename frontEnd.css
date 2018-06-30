@@ -75,46 +75,29 @@ body{
    }
 
 /*3 kép*/
-.section_weapons3 {
-    width: 100%;
-    box-sizing: border-box;
+.section_weapons3 {}
+
+div.container.weapons3 {
+    position: relative;
+    max-width: 1200px;
+    margin: 3% auto;
+    overflow: auto;
+}
+
+.onethird_img, .onethird_img, .onethird_img {
+    display: block;
+    width: inherit;
+    max-height: inherit;
+    object-fit: contain;
+    margin: auto;
+}
+
+.onethird.rocket, .onethird.watergun, .onethird.sword {
     position: relative;
     margin: auto 0;
-}
-
-.container.weapons3 {
-    width: inherit;
-    position: relative;
-    margin: 0 auto;
-    height:inherit;
+    width: 33%;
+    height: 33%;
     float: left;
-}
-
-.onethird.rocket {
-    width: inherit;
-    float: right;
-    position: absolute;
-    bottom:0;
-    object-fit: contain;
-   height: 100%
-}
-
-.onethird.watergun {
-   width: inherit;
-    float: right;
-    position: absolute;
-    bottom:0;
-    object-fit: contain;
-   height: 100%
-}
-
-.onethird.sword {
-   width: inherit;
-    float: right;
-    position: absolute;
-    bottom:0;
-    object-fit: contain;
-   height: 100%
 }
 
 .container_onethird_img {  
