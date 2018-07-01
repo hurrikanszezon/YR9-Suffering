@@ -101,47 +101,31 @@ body {
 }
 
 /*3 kép*/
-.section_weapons3 {
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  margin: auto 0;
+.section_weapons3 {}
+
+div.container.weapons3 {
+    position: relative;
+    max-width: 1200px;
+    margin: 3% auto;
+    overflow: auto;
 }
 
-.container.weapons3 {
-  width: inherit;
-  position: relative;
-  margin: 0 auto;
-  height: inherit;
-  float: left;
+.onethird_img, .onethird_img, .onethird_img {
+    display: block;
+    width: inherit;
+    max-height: inherit;
+    object-fit: contain;
+    margin: auto;
 }
 
-.onethird.rocket {
-  width: inherit;
-  float: right;
-  position: absolute;
-  bottom: 0;
-  object-fit: contain;
-  height: 100%;
+.onethird.rocket, .onethird.watergun, .onethird.sword {
+    position: relative;
+    margin: auto 0;
+    width: 33%;
+    height: 33%;
+    float: left;
 }
-
-.onethird.watergun {
-  width: inherit;
-  float: right;
-  position: absolute;
-  bottom: 0;
-  object-fit: contain;
-  height: 100%;
-}
-
-.onethird.sword {
-  width: inherit;
-  float: right;
-  position: absolute;
-  bottom: 0;
-  object-fit: contain;
-  height: 100%;
-}
+/* 3 kép vége*/
 
 .container_onethird_img {
   width: inherit;
@@ -272,6 +256,16 @@ h6 {
 .container_half_p {
 }
 
+/*dupla háttér*/
+.section_2background {
+    position: relative;
+    background-image: url('/frontEndImages/rowofswords.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto 0;
+    box-sizing: border-box;
+}
 .full_2background {
   padding: 0;
   margin: 5% auto;
@@ -287,14 +281,20 @@ h6 {
   font-size: 2em;
   margin: 0 auto;
 }
+/*dupla háttér vége*/
 
+/*instant hadsereg*/
 .section_instant_hadsereg {
   background-color: #f5f5f5;
   margin: 0;
 }
 
-.container_full_p {
+.full.instant_hadsereg {
+    box-sizing: border-box;
+    margin: 5%;
 }
+
+.container_full_p {}
 
 .container_full_h2 {
 }
@@ -645,3 +645,58 @@ section.second twohird {
       -webkit-margin-after: .5em
     }
 }
+/*404 error page*/
+
+.errorpage {
+    margin: 0;
+    width: 100%;
+    height:  100%;
+    background-image: url(/frontEndImages/drawn-explosion-mushroom-cloud-5.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom; 
+}
+
+.container_errorpage {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: content-box;
+    text-align: center;
+    overflow: auto;
+}
+
+.error_images {
+    box-sizing: content-box;
+    margin: 10% auto 5%;
+}
+
+.numberfour {
+    position: relative;
+    width: 5.5em;
+    height: 5.5em;
+}
+
+.revolver {
+    position: relative;
+    width: 5.5em;
+    height: 5.5em;
+}
+
+.revolver:hover {
+    cursor: pointer;
+}
+
+.error_message {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+.error_message.title {
+    font-size: 3em;
+}
+
+.error_message.message {
+    font-size: 1.5em;
