@@ -302,10 +302,18 @@ h6 {
 .container_full_h5 {
 }
 /*Lord of war section*/
+#soldier {
+  width: 5%;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -moz-transform: scaleX(-1)
+}
+
 .lord-of-war {
   position: relative;
-  margin: 100px 0;
   box-sizing: border-box;
+  background: rgb(245 245 245)
 }
 .onethird-low {
   height: auto;
