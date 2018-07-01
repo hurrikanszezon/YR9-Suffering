@@ -558,3 +558,24 @@ section.second twohird {
 
 .header.h1 {
 }
+@media (max-width: 800px) {
+    .container#first .onethird {
+        padding: 2px;
+        width: calc(100% - 20px);
+        float: left;
+        margin: 5px;
+        object-fit: contain;
+      }
+      .container_onethird_h4 {
+        -webkit-margin-before: .5em;
+        -webkit-margin-after: .5em
+      }
+      .container#first {
+          object-fit: contain;
+          max-height: 100%
+      }
+      .container_onethird_p{
+        -webkit-margin-before: .5em;
+      -webkit-margin-after: .5em
+    }
+}
