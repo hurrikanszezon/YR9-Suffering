@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="frontEnd.css">
-    <link rel="stylesheet" href="/dist/css/zoli.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
 
@@ -17,10 +16,17 @@
     <header class="pg_header">
         <div class="container">
             <nav class="nav_header">
-                <a href="nav_header_a">Contact</a>
-                <a href="nav_header_a">Coming Soon</a>
-                <a href="nav_header_a">404</a>
-                <a href="nav_header_a">Login</a>
+                <ul>
+                    <li>
+                        <a href="nav_header_a">Contact</a>
+                    </li>
+                    <li>
+                        <a href="nav_header_a">Coming Soon</a>
+                    </li>
+                    <li>
+                        <a href="nav_header_a">404</a>
+                    </li>
+                </ul>
             </nav>
             <div class="onethird">
                 <img class="header_img" src="/dist/img/ak47.jpg" alt="AK-47">
@@ -81,17 +87,17 @@
             </div>
         </div>
     </section>
-    <!--3 kép-->
-    <section class="section_weapons3">
-        <div class="container weapons3">
-            <div class="onethird rocket">
-                <img class="container_onethird_img" src="frontEndImages/missile-war-weapon.svg" alt='missile-war-weapon'>
+    <section>
+        <!--egy ábra egy szöveg-->
+        <div class="container">
+            <div class="half">
+                <img class="container_half_img" src=" " alt=" ">
             </div>
-            <div class="onethird watergun">
-                <img class="container_onethird_img" src="frontEndImages/water-gun.svg" alt="water-gun">
-            </div>
-            <div class="onethird sword">
-                <img class="container_onethird_img" src="frontEndImages/sword.svg" alt="sword">
+            <div class="half">
+                <h2 class="container_half_h2"></h2>
+                <p class="container_half_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, eos qui cupiditate ab doloremque reprehenderit
+                    quaerat pariatur. Cupiditate, tempore commodi earum sit delectus ducimus nemo eligendi voluptate. Nulla,
+                    maiores quo?</p>
             </div>
         </div>
     </section>
@@ -99,21 +105,19 @@
     <section class="section_2background">
         <div class="container_2background">
             <div class="full_2background">
-                <p class="full_2background_p">"Kapsz a nyakadba nukleáris telet."</p>
-                <div id="quote">
-                    <h6 class="full_2background_h6">~ Ghandi</h6>
-                </div>
+                <p class="full_2background_p">"Kapsz a nyakadba nukleáris telet. "</p>
+                <h6 class="full_2background_h6">~ Ghandi</h6>
             </div>
         </div>
     </section>
-    <section class="section_instant_hadsereg">
+    <section>
         <!-- egy szöveg-->
         <div class="container">
             <div class="full">
-                <h2 class="container_full_h2">Instant Hadsereg</h2>
-                <p class="container_full_p">Ha még a piros gomb megnyomására sem hajlandó egymaga, nem hogy összevérezze magát, igényelje Instant Hadsereg
-                    szolgáltatásunkat, és végeztesse mással az igazán piszkos munnkát. Az Instant technológiából adódóan
-                    500 főig bezárólag tudunk felvenni rendelést.Egyelőre...
+                <h2 class="container_full_h2"></h2>
+                <p class="container_full_p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore ea, harum explicabo dignissimos culpa repudiandae
+                    minus natus, blanditiis voluptate magnam alias aut vel, architecto eius odit voluptates rem expedita
+                    tempora.
                 </p>
             </div>
         </div>
@@ -140,7 +144,7 @@
             <h5 class="container_full_h5">Esetleg atomcsapást...
                 <i class="fas fa-rocket"></i>
             </h5>
-            <input autocomplete="off" class="email_input" type="email" name="userEmail" id="userEmail" placeholder="Ide írja az email címét">
+            <input class="email_input" type="email" name="userEmail" id="userEmail" placeholder="Ide írja az email címét">
             <button class="container_full_btn email-btn">Küldés</button>
         </div>
     </section>
