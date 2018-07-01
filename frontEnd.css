@@ -562,6 +562,62 @@ section.second twohird {
   float: left;
   text-align: center;
 }
+/*404 error page*/
+
+.errorpage {
+    margin: 0;
+    width: 100%;
+    height:  100%;
+    background-image: url(/frontEndImages/drawn-explosion-mushroom-cloud-5.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom; 
+}
+
+.container_errorpage {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: content-box;
+    text-align: center;
+    overflow: auto;
+}
+
+.error_images {
+    box-sizing: content-box;
+    margin: 10% auto 5%;
+}
+
+.numberfour {
+    position: relative;
+    width: 5.5em;
+    height: 5.5em;
+}
+
+.revolver {
+    position: relative;
+    width: 5.5em;
+    height: 5.5em;
+}
+
+.revolver:hover {
+    cursor: pointer;
+}
+
+.error_message {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+.error_message.title {
+    font-size: 3em;
+}
+
+.error_message.message {
+    font-size: 1.5em;
+}
 
 .header_h3 {
 }
