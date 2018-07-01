@@ -600,6 +600,10 @@ section.second twohird {
     height: 5.5em;
 }
 
+#errorGif{
+  text-decoration: none;
+}
+
 .revolver:hover {
     cursor: pointer;
 }
