@@ -6,8 +6,8 @@ var armStore = [
         price: 300000,
         count: 21,
         sold: 1,
-        createdAt: new Date(2017, 10, 12),
-        updatedAt: new Date(2017, 10, 13)
+        createdAt: new Date(2015, 10, 12),
+        updatedAt: new Date(2016, 10, 13)
 
     },
     {
@@ -61,7 +61,7 @@ var armStore = [
         price: 300000,
         count: 21,
         sold: 1,
-        createdAt: new Date(2018, 06, 30),
+        createdAt: new Date(2015, 05, 30),
         updatedAt: new Date(2018, 07, 01)
 
     },
@@ -193,7 +193,7 @@ var armStore = [
         price: 55000000,
         count: 3,
         sold: 4,
-        createdAt: new Date(2018, 03, 30),
+        createdAt: new Date(2018, 06, 30),
         updatedAt: new Date(2018, 04, 01)
 
     },
@@ -281,7 +281,7 @@ var armStore = [
         price: 56000000,
         count: 5,
         sold: 1,
-        createdAt: new Date(2018, 06, 05),
+        createdAt: new Date(2018, 06, 04),
         updatedAt: new Date(2018, 06, 11)
     }
 
@@ -367,16 +367,16 @@ function threeMostPop() {
 };
 
 function threeMostRecent() {
-    for (var j = 0; j < armStore.length - 1; j++); {
-        for (var k = j + 1; k < armStore.length; k++) {
-            if (armStore[j].createdAt > armStore[k].createdAt) {
-                var tempoRepo = [armStore[j], armStore[k]];
-                armStore[j] = tempoRepo[1];
-                armStore[k] = tempoRepo[0];
+    for (var x = 0; x < armStore.length - 1; x++) {
+        for (var y = x + 1; y < armStore.length; y++) {
+            if (armStore[x].createdAt.getTime() < armStore[y].createdAt.getTime()) {
+                var tempoRepo = [armStore[x], armStore[y]];
+                armStore[x] = tempoRepo[1];
+                armStore[y] = tempoRepo[0];
             };
         };
     };
-    /* 0for (var i = 0; i < 3; i++) {
- }; */
-    console.log(armStore);
+    for (var x = 0; x < 3; x++) {
+        console.log(armStore[x].name, armStore[x].createdAt);
+    };
 };
