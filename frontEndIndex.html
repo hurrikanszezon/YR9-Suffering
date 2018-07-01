@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
@@ -37,7 +37,7 @@
             <div class="twothird">
                 <h4 class="header_logo">
                     <img class="teamlogo" src="/dist/img/buffering.gif" alt="buffering">TeamBuffering bemutatja:</h4>
-                <h3 class="header_h3">(w)ARMORY&#x00AE</h3>
+                <h3 class="header_h3">(w)ARMORY&#174;</h3>
                 <h1 class="header_h1">Fegyverek engedélyek nélkül.</h1>
                 <p class="header_p">Engedély? Önnek sincs, nekünk sincs. Nálunk ez a kölcsönös bizalom alapja. Nézzen körül honlapunkon, és válasszon
                     hatékony eszközt a hétköznapi konfliktusok kezelésére!
@@ -51,7 +51,7 @@
     <section class="container" id=first>
         <div class="onethird">
             <h4 class="container_onethird_h4">
-                <i class="fas fa-fighter-jet" style="font-size:30px"></i>w(ARMORY)&#x00AE: az arzenál</h4>
+                <i class="fas fa-fighter-jet" style="font-size:30px"></i>w(ARMORY)&#174;: az arzenál</h4>
             <p class="container_onethird_p">
                 A cél szentesíti az eszközt. Nos, nálunk mindent megtalál, ami fegyver: a konzervnyitótól a légicsapásig. Szeretettel várjuk
                 bármelyik üzletünkben, hogy kiválassza, mivel nézzen szembe ellensége.
@@ -80,7 +80,7 @@
             <div class="twothird">
                 <h2 class="container_twothird_h2">Ideje bevetni a nagyágyút!</h2>
                 <p class="container_twothird_p">Senki nem lépett rá az aknára? A svájci bicska beletört a bőrkabátba? Cserben hagyta a konzervnyitó? Fejezze
-                    be a bohóckodást és válassza csúcstermékünket, az ATOMBOMBÁT!</p>
+                    be a bohóckodást, és válassza csúcstermékünket, az ATOMBOMBÁT!</p>
                 <p class=warning>Figyelem: biztonsági okokból kérjük, ne tartózkodjék a felhasználás közvetlen közelében!
                     <br>
                     <br>A sorozatos rossz tapasztalok után, úgy döntöttünk, hogy a továbbiakban nincs lehetőség üzletünkben való
@@ -88,7 +88,7 @@
                 </p>
             </div>
             <div class="onethird" id="bomb">
-                <img class="container_onethird_img" src="/dist/img/nuclear_bomb.png" alt="Nuclear bomb ">
+                <img class="container_onethird_img" src="/dist/img/nuclear_bomb.png" alt="Nuclear bomb">
             </div>
         </div>
     </section>
@@ -96,13 +96,13 @@
     <section class="section_weapons3">
         <div class="container weapons3">
             <div class="onethird rocket">
-                <img class="onethird_img" src="/frontEndImages/missile-war-weapon.svg">
+                <img class="onethird_img" src="/frontEndImages/missile-war-weapon.svg" alt="Rakéta">
             </div>
             <div class="onethird watergun">
-                <img class="onethird_img" src="/frontEndImages/water-gun.svg">
+                <img class="onethird_img" src="/frontEndImages/water-gun.svg" alt="Vízipisztoly">
             </div>
             <div class="onethird sword">
-                <img class="onethird_img" src="/frontEndImages/sword.svg">
+                <img class="onethird_img" src="/frontEndImages/sword.svg" alt="Kard">
             </div>
         </div>
     </section>
@@ -111,7 +111,7 @@
         <div class="container_2background">
             <div class="full_2background">
                 <p class="full_2background_p">"Kapsz a nyakadba nukleáris telet."</p>
-                <h6 class="full_2background_h6">~ Ghandi</h6>
+                <h6 class="full_2background_h6">~ Gandhi</h6>
             </div>
         </div>
     </section>
@@ -131,7 +131,10 @@
     <section class="lord-of-war">
         <div class="container">
             <div class="twothird-low">
-                <h2 class="container_twothird_h2">Nálunk rálel kedvenc fegyverére</h2>
+                <h2 class="container_twothird_h2">
+                    Nálunk rálel kedvenc fegyverére
+                    <img id="soldier" src="frontEndImages/soldier.gif" alt="soldier">
+                </h2>
                 <p class="container_twothird_p">A mi polcainkon mindent megtalál amire szüksége lehet ha a szomszéd megszállja az országát vagy csak túl
                     hangosan hallgatja a zenét. Legyen az egy csehszlovák vajazó kés vagy akár egy neutronbomba, nálunk engedélyek
                     nélkül is megkaphatja.
@@ -149,8 +152,11 @@
             <h5 class="container_full_h5">Esetleg atomcsapást...
                 <i class="fas fa-rocket"></i>
             </h5>
-            <input class="email_input" type="email" name="userEmail" id="userEmail" placeholder="Ide írja az email címét">
-            <button class="container_full_btn email-btn">Küldés</button>
+            <input autocomplete="off" class="email_input" type="email" name="userEmail" id="userEmail" placeholder="Ide írja az email címét">
+            <button class="container_full_btn email-btn">
+                <i class="far fa-envelope fa-spin"></i>
+
+                Küldés</button>
         </div>
     </section>
     <!--két gomb-->
