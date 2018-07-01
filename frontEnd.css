@@ -77,8 +77,9 @@ body {
   color: white;
 }
 .nav_header li a:hover {
-  background-color: #49c5da;
-  color: white;
+  background-color: #50c7dc;
+  color:#012c4b;
+  transition: 0.3s
 }
 
 .pg_header .container .onethird {
@@ -216,9 +217,16 @@ h6 {
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  padding: 12px 23px 12px 23px;
+  padding: 10px 20px 10px 20px;
   font-family: Nunito;
-  margin: 2px;
+  margin: 0;
+  }
+  .header_btn:hover {
+  background-color: #49c5da;
+  color:#012e4f;
+  transition: 0.3s;
+  border: none; 
+  margin:0 
 }
 
 .iconbox {
@@ -239,6 +247,8 @@ h6 {
 
 .header_p {
   font-family: Nunito;
+  margin-top:25px;
+  margin-bottom:25px
 }
 
 .container_onethird_h4 {
