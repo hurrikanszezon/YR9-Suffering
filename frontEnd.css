@@ -1,6 +1,6 @@
 @font-face {
   font-family: Nunito;
-  src: url("/fonts/Nunito/Nunito-Regular.ttf");
+  src: url("fonts/Nunito/Nunito-Regular.ttf");
 }
 
 @font-face {
@@ -704,28 +704,4 @@ section.second twohird {
 
 .error_message.message {
     font-size: 1.5em;
-}
-
-/*contact oldal*/
-
-.form_container {
-
-}
-
-.contact_form {
-  padding: 10px;
-  width: calc(66% - 40px);
-  float: right;
-  margin: 10px;
-  object-fit: contain;
-  height: 100%;
-}
-
-.contact_column {
-  padding: 10px;
-  width: calc(33% - 40px);
-  float: left;
-  margin: 10px;
-  object-fit: contain;
-  height: 100%;
 }
