@@ -1,0 +1,25 @@
+.bg-img {
+    background: url("http://www.emerydesigns.net/wp-content/uploads/2017/07/banner-13.jpg") no-repeat center center fixed;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.50;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    position: relative;
+    padding: 8px;
+    font-family: Josefin Sans, sans-serif;
+    color: #535353;
+    overflow: auto;
+    float: left;
+    opacity: 1;
+    margin: 233px;
+    box-sizing: border-box;
+    text-align: left;
+}
