@@ -204,6 +204,7 @@ h6 {
   padding: 10px 20px 10px 20px;
   font-family: Nunito;
   margin: 0;
+  outline: none;
   }
   .header_btn:hover {
   background-color: #49c5da;

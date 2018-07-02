@@ -113,8 +113,8 @@ button{
 }
 
   input {
-    border: none;
-    background: #004c97;
+    
+    background: aliceblue;
     border-radius: 10px;
     outline: none;
     padding: 5px;
@@ -126,6 +126,7 @@ button{
     width: calc(66% - 40px);
     resize: vertical;
     height: 200px;
+    background: aliceblue;
   }
   section {
     font-family: Nunito;
